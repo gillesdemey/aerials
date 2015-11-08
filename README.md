@@ -18,7 +18,7 @@ Get a random aerial video à la Apple TV.
 
 A random aerial video
 
-```
+```javascript
 aerials.get(function (err, aerial) {
   if (err) throw err
   console.log('random aerial:', aerial)
@@ -27,7 +27,7 @@ aerials.get(function (err, aerial) {
 
 A random aerial video of San Franscisco at night
 
-```
+```javascript
 aerials.get({ 'city': 'San Francisco', 'timeOfDay': 'night' }, function (err, aerial) {
   if (err) throw err
   console.log('random aerial in San Francisco at day:', aerial)
@@ -36,7 +36,7 @@ aerials.get({ 'city': 'San Francisco', 'timeOfDay': 'night' }, function (err, ae
 
 The best aerial video
 
-```
+```javascript
 aerials.get('b4-3', function (err, aerial) {
   if (err) throw err
   console.log('best aerial:', aerial)
